@@ -3,11 +3,13 @@ Vue.component('project-component',{
   filters:{},
   methods:{},
   template:`
-    <div class="card" >
-      <img :src="project.img">
-      <i>{{project.name}}</i> -
-      <i>{{project.status}}</i> -
-      <i>{{project.date}}</i>
+    <div class="project" >
+        <i>{{project.name}}</i> -
+        <i>{{project.status}}</i> -
+        <i>{{project.date}}</i>
+        <div class="card">
+        <img :src="project.img">
+      </div>
     </div>
   `
 });
@@ -31,7 +33,7 @@ var app = new Vue({
     <div>
       <i>{{message}}</i>
       <header><h1><i style="font-weight: 900"> Projects and Stuff </i></h1></header>
-      <div class="cardcontainer">
+      <div class="projectcontainer">
           <project-component v-for="item in projects" v-bind:project="item" :key="item.name" ></project-component>
       </div>
     </div>
