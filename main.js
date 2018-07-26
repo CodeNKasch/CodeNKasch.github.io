@@ -1,3 +1,17 @@
+Vue.component('project-component',{
+  props:['project'],
+  filters:{},
+  methods:{},
+  template:`
+    <div class="card" >
+      <img :src="project.img">
+      <i>{{project.name}}</i> -
+      <i>{{project.status}}</i> -
+      <i>{{project.date}}</i>
+    </div>
+  `
+});
+
 var app = new Vue({
   el:"#app",
   data:{
@@ -13,18 +27,12 @@ var app = new Vue({
       return `Projects: ${this.projects.map(p=>p.name).join(", ")}`
     }
   },
-  filters:{
-    //reusable computed values here then us it as {{ value | filter}}
-  },
   template: `
     <div>
       <i>{{message}}</i>
-      <header><h1> Projects and Stuff </h1></header>
+      <header><h1><i style="font-weight: 900"> Projects and Stuff </i></h1></header>
       <div class="cardcontainer">
-        <div class="card" v-for="project in projects">
-          <img :src="project.img">
-          <label>{{project.name}}</label>
-      </div>
+          <project-component v-for="item in projects" v-bind:project="item" :key="item.name" ></project-component>
       </div>
     </div>
   `
