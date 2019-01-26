@@ -4,7 +4,7 @@ Vue.component('project-component',{
   methods:{},
   template:`
     <div class="project" >
-        <i>{{project.name}}</i> -
+        <h3><i>{{project.name}}</i></h3>
         <i>{{project.status}}</i> -
         <i>{{project.date}}</i>
         <div class="card">
