@@ -22,6 +22,10 @@ img {
   width: 100%;
 }
 
+.front, .back{
+  height: 100%;
+}
+
 .card {
   background-color: #fff;
   border-radius: 7px;
@@ -47,6 +51,3 @@ img {
   position: relative;
   text-align: center;
 }
-
-
-// todo make seperate  flipcard https://codepen.io/andymcfee/pen/eyahr
