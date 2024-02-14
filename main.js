@@ -65,11 +65,7 @@ var app = new Vue({
     profile:{
 	    img: "https://d2exd72xrrp1s7.cloudfront.net/www/10/10lw9isgd9rav1beebkkvc702u414l6v3j-u689455295973-full/17e2452fe2a?width=400&height=400&crop=true", //https://avatars.githubusercontent.com/u/24311812",
 	    name:"Karl Schmidt",
-        github: {
-          link: "https://github.com/CodeNKasch",
-          svg: ""
-        },
-
+        github: "https://github.com/CodeNKasch",
         komoot: "https://www.komoot.com/de-de/user/689455295973",
         xing: "https://www.xing.com/profile/Karl_Schmidt024310/web_profiles",
     },
