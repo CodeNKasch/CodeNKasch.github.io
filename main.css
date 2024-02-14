@@ -54,6 +54,13 @@ nav {
     min-height:100px;
 }
 
+footer{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    bottom: 0;
+}
+
 .gradient-text {
   /* Fallback: Set a background color. */
 
