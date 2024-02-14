@@ -36,16 +36,21 @@
 </template>
 
 <style scoped>
-.profile_img{
+.profile{
+  position: relative;
+}
+.profile_img {
   overflow: hidden;
   border-radius: 20px;
+  position: relative;
+    width: 100%;
+    height: auto;
 }
 .flexbox_container{
-
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: center;
   transition-duration: 500ms;
   transition-property: background;
   min-width: 0;
@@ -67,7 +72,15 @@
   }
 }
 .profile_item{
-  width: 33%;
+  width: 50px;
+  margin: auto;
   text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+  #app{
+    min-width: 60vh;
+  }
 }
 </style>

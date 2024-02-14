@@ -11,6 +11,12 @@ import Profile from './components/TheProfile.vue'
 
 <style scoped>
 #appContent{
-  margin:23px;
+  margin:8px;
+}
+
+@media (min-width: 1024px) {
+  #appContent{
+    margin:23px;
+  }
 }
 </style>

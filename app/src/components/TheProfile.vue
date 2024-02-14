@@ -14,9 +14,9 @@ import Profile from "@/components/Profile.vue";
 </template>
 
 <style scoped>
-.profile_img{
-  padding: 10px;
-  overflow: hidden;
-  border-radius: 20px;
+img{
+  width:100%;
+  height:auto;
 }
+
 </style>

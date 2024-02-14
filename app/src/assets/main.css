@@ -15,10 +15,10 @@ body {
 
 #app{
   margin: 8px auto;
-  padding: 20px;
+  padding: 8px;
   display:flex;
   border-radius: 20px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 a,
@@ -36,9 +36,8 @@ a,
 }
 
 @media (min-width: 1024px) {
-
   #app{
     min-width: 60vh;
-    flex-direction: row;
+    padding: 20px;
   }
 }
