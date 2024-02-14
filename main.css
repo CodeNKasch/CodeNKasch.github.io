@@ -1,19 +1,46 @@
-body {
-  background-color: #ddd;
+
+html {
+  color: #fff;
+  display: block;
+  background-image: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
   border: 0;
   margin: 0;
-  padding: 0;
+  padding: 8px;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: "Quicksand Light";
 }
 
-header {
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+
+a:link {
+  color: #d5d5fc;
+}
+
+/* visited link */
+a:visited {
+  color: #e6d6ff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d4ffc6;
+}
+
+/* selected link */
+a:active {
+  color: #bfbfff;
+}
+
+div {
   height: auto;
   text-align: center;
   text-decoration: underline;
 }
 
-i {
-  font-family: "Indie Flower", cursive;
-}
 
 img {
   border-radius: 5px;
@@ -22,32 +49,95 @@ img {
   width: 100%;
 }
 
-.front, .back{
-  height: 100%;
+.gradient-text {
+  /* Fallback: Set a background color. */
+
+}
+
+h1,h2,h3,h4,h5{
+    background-color: rgb(93, 219, 149);
+    background-image: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+}
+
+.main_content{
+  background:rgb(30, 35, 52);
+  border-radius: 20px;
+    padding-top:8px;
 }
 
 .card {
   background-color: #fff;
   border-radius: 7px;
-  box-shadow: -5px 10px 5px #66666666;
-  height: 26vw;
+  height: 16vw;
+    width: 16vw;
   margin-left: 2vw;
   margin-right: 2vw;
-  width: 16vw;
-}
-
-.card label {
-  font-family: "Libre Barcode 128 Text", cursive;
-  font-size: 2em;
 }
 
 .project {
   display: inline-block;
 }
 
-.projectcontainer {
+.project_container {
   display: block;
-  padding: 100px;
+    margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   position: relative;
   text-align: center;
+}
+
+.profile_container {
+  display: block;
+  position: relative;
+  text-align: center;
+
+    img{
+        height:200px;
+        width:200px;
+        border-radius: 100px;
+    }
+}
+
+.flexbox_container {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile_item {
+    height:50px;
+    width:50px;
+    margin:8px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2em;
+    height: 0.15em;
+    border-top-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    border-bottom-left-radius: 999px;
+    background-image: inherit;
 }
