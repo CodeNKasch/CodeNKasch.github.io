@@ -40,7 +40,6 @@ a:active {
 div {
   height: auto;
   text-align: center;
-  text-decoration: underline;
 }
 
 
@@ -65,7 +64,6 @@ h1,h2,h3,h4,h5{
     background-image: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
     background-size: 100%;
     background-repeat: repeat;
-    text-decoration: underline;
     font-weight: bold;
     font-style: normal;
     -webkit-background-clip: text;
