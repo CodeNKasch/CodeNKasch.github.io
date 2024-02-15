@@ -19,6 +19,7 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --gradient: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
 }
 
 /* semantic color variables for this project */
@@ -38,7 +39,7 @@
 
 h1, h2, h3, h4, h5 {
      background-color: rgb(93, 219, 149);
-     background-image: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
+     background-image: var(--gradient);
      background-size: 100%;
      background-repeat: repeat;
      font-weight: bold;
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5 {
 body {
   min-height: 100vh;
   background-color: rgb(93, 219, 149);
-  background-image: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
+  background-image: var(--gradient);
   background-size: 100%;
   background-repeat: repeat;
   --color: var(--color-text);
