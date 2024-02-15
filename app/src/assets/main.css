@@ -15,10 +15,9 @@ body {
 
 #app{
   margin: 8px;
-  padding: 8px;
+  padding: 15px;
   display:flex;
   border-radius: 20px;
-  flex-direction: row;
 }
 
 a,
