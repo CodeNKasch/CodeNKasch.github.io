@@ -63,17 +63,6 @@ import IconXing from "@/components/icons/IconXing.vue";
   padding: 0;
   margin: 0;
   padding-top:10px;
-  ::after{
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2em;
-      height: 0.15em;
-      border-radius: 999px;
-      background-image: inherit;
-  }
 }
 
 .profile_item{
