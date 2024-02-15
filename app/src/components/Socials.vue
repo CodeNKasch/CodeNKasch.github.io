@@ -60,6 +60,7 @@ export default {
     }
   }
 }
+
 @media (min-width: 1024px) {
   .flexbox_container{
     flex-direction: column;
