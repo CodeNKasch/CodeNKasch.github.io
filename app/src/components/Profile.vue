@@ -47,8 +47,8 @@ import IconXing from "@/components/icons/IconXing.vue";
   overflow: hidden;
   border-radius: 20px;
   position: relative;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  padding-bottom: 100%;
 }
 .flexbox_container{
   display: flex;
@@ -75,6 +75,7 @@ import IconXing from "@/components/icons/IconXing.vue";
       background-image: inherit;
   }
 }
+
 .profile_item{
   width: 60px;
   margin: auto;
