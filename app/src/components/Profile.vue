@@ -21,7 +21,10 @@ import IconXing from "@/components/icons/IconXing.vue";
 <style scoped>
 .profile{
   position: relative;
-  min-width: 250px;
+  min-width: 240px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .profile_img {
   overflow: hidden;

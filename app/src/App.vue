@@ -1,9 +1,11 @@
 <script setup>
 import Profile from './components/TheProfile.vue'
 import Socials from "@/components/Socials.vue";
+import ThemeToggle from "@/components/ThemeToggle.vue";
 </script>
 
 <template>
+  <ThemeToggle />
   <div class="content">
 
     <Profile/>
@@ -20,10 +22,11 @@ import Socials from "@/components/Socials.vue";
   display: flex;
   flex-direction: column;
   position: relative;
-  min-width: 250px;
+  min-width: 240px;
+  width: 100%;
 }
 .divider{
-  margin: 15px 0;
+  margin: 20px 0;
   position: relative;
   width:100%;
   height:3px;

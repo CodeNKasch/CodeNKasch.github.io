@@ -14,10 +14,12 @@ body {
 }
 
 #app{
-  margin: 0 8px auto;
-  padding: 15px;
+  margin: 0 auto;
+  padding: 20px 16px;
   display:flex;
   border-radius: 20px;
+  max-width: 100%;
+  width: calc(100% - 16px);
 }
 
 a,
@@ -34,9 +36,16 @@ a,
   }
 }
 
+@media (min-width: 768px) {
+  #app{
+    padding: 24px;
+    width: auto;
+  }
+}
+
 @media (min-width: 1024px) {
   #app{
     min-width: 60vh;
-    padding: 20px;
+    padding: 32px;
   }
 }
