@@ -20,6 +20,12 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
   --gradient: linear-gradient(to right, rgb(93, 219, 149) 0%, rgb(71, 148, 230) 100%);
+  --gradient-rainbow: linear-gradient(to right,
+  rgb(255, 0, 0) 0%, rgb(255, 106, 0) 10%, rgb(255, 242, 0) 20%,
+  rgb(170, 255, 1) 30%, rgb(0, 255, 51) 40%, rgb(0, 255, 149) 50%,
+  rgb(0, 234, 255) 60%, rgb(1, 90, 255) 70%, rgb(34, 0, 255) 80%,
+  rgb(191, 0, 255) 90%, rgb(238, 0, 255) 100%
+  );
 }
 
 /* semantic color variables for this project */
