@@ -2,10 +2,12 @@
 import Profile from './components/TheProfile.vue'
 import Socials from "@/components/Socials.vue";
 import ThemeToggle from "@/components/ThemeToggle.vue";
+import CVModal from "@/components/CVModal.vue";
 </script>
 
 <template>
   <ThemeToggle />
+  <CVModal />
   <div class="content">
 
     <Profile/>
